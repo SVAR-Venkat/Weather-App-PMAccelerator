@@ -75,10 +75,8 @@ Replace `your_mongodb_connection_string` with your actual MongoDB URI.
 You can run the frontend and backend using separate terminals:
 
 **Terminal 1 (Frontend):**
-```bash
-cd client
+
 npm start
-```
 
 **Terminal 2 (Backend):**
 ```bash
@@ -92,20 +90,7 @@ Or use tools like `concurrently` to run both from one command.
 
 ## 📁 Folder Structure
 
-```
-weather-app/
-├── client/             # React frontend
-│   ├── components/
-│   ├── utils/
-│   ├── App.js
-│   └── ...
-├── server/             # Node.js backend
-│   ├── models/
-│   ├── routes/
-│   ├── server.js
-│   └── ...
-└── README.md
-```
+
 
 ---
 
