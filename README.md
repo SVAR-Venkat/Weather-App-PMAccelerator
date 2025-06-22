@@ -108,8 +108,7 @@ weather-app-pmaccelerator/
 ├── package.json
 ├── package-lock.json
 └── README.md
-
----
+```
 
 ## 🧪 Future Enhancements
 
@@ -118,7 +117,6 @@ weather-app-pmaccelerator/
 - 📈 Add charts for temperature and humidity trends
 - 🔐 Authentication for user-specific data
 
----
 
 ## 📬 Contact
 
@@ -127,7 +125,6 @@ weather-app-pmaccelerator/
 🔗 [LinkedIn](https://www.linkedin.com/in/sanampudi-venkatappa/)  
 🐙 [GitHub](https://github.com/SVAR-Venkat)
 
----
 
 ## 📄 License
 
