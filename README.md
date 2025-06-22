@@ -38,22 +38,23 @@ A full-featured weather forecasting application built using **React.js**, **Node
 
 ```bash
 git clone https://github.com/SVAR-Venkat/Weather-App-PMaccelerator.git
-extract and then execute the below command
 cd Weather-App-PMaccelerator
 ```
 
 ### 🔧 Install dependencies
 
 #### For Frontend (React)
+```bash
 cd .\Weather-App-PMAccelerator-main\
 npm install
-
+```
 
 #### For Backend (Node.js)
+```bash
 cd .\Weather-App-PMAccelerator-main\
 cd server
 npm install
-
+```
 
 
 ## ✅ Running the App
@@ -67,7 +68,7 @@ You can run the frontend and backend using separate terminals:
 npm start
 
 **Terminal 2 (Backend):**
-```
+```bash
 cd .\Weather-App-PMAccelerator-main\
 cd server
 node server.js
@@ -78,7 +79,7 @@ Or use tools like `concurrently` to run both from one command.
 ---
 
 ## 📁 Folder Structure
-
+```bash
 weather-app-pmaccelerator/
 ├── build/                     # Production build (after running npm build)
 ├── node_modules/             # Dependencies
