@@ -1,74 +1,137 @@
-<<<<<<< HEAD
-# Getting Started with Create React App
+# Weather Forecast App with CRUD and Data Export
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a full-stack weather forecast application built using **React** for the frontend and **Node.js/Express** with **MongoDB Atlas** for the backend. It allows users to:
 
-## Available Scripts
+- 🔍 Search weather by city
+- 🌐 Use geolocation to fetch weather automatically
+- 📆 View today's and 5-day weather forecasts
+- 💾 Save, update, and delete weather records (CRUD)
+- 📤 Export forecast data to JSON and CSV
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 🔧 Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Frontend
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- React
+- JavaScript
+- CSS
 
-### `npm test`
+### Backend
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Node.js
+- Express
+- MongoDB (Atlas)
+- Mongoose
 
-### `npm run build`
+### APIs
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- [OpenWeatherMap API](https://openweathermap.org/api)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🚀 Features
 
-### `npm run eject`
+### ✅ Forecast
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Fetch today's forecast from OpenWeatherMap
+- Fetch 5-day forecast (3-hour intervals grouped by day)
+- View temperature, humidity, pressure, wind, clouds, and description
+- Dynamic icons
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### ✅ CRUD Functionality
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Add weather records manually (location, date, temperature, etc.)
+- View all records in a table
+- Update and delete individual records
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### ✅ Data Export
 
-## Learn More
+- Export forecast or CRUD records to **JSON**
+- Export forecast or CRUD records to **CSV**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 📁 Project Structure
 
-### Code Splitting
+```
+weather-app-pmaccelerator/
+├── client/                   # React frontend
+│   ├── src/
+│   │   ├── components/       # UI Components
+│   │   ├── utils/            # Export utilities
+│   │   └── App.js            # Main component
+├── server.js                # Express backend
+├── models/Weather.js        # Mongoose schema
+├── .env                     # MongoDB URI and config
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+## ⚙️ Setup Instructions
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### 1. Clone the Repository
 
-### Making a Progressive Web App
+```bash
+git clone https://github.com/YOUR_USERNAME/weather-app-pmaccelerator.git
+cd weather-app-pmaccelerator
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### 2. Setup Backend
 
-### Advanced Configuration
+```bash
+npm install
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Create a `.env` file:
 
-### Deployment
+```env
+MONGODB_URI=your_mongodb_connection_string
+PORT=5000
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Start backend server:
 
-### `npm run build` fails to minify
+```bash
+node server.js
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-=======
-# Weather-App-PMAccelerator
->>>>>>> 535a8fcfb6df39ce271c447487aeca25c0593ba4
+### 3. Setup Frontend (inside client folder)
+
+```bash
+cd client
+npm install
+npm start
+```
+
+---
+
+## 🔑 Environment Variables
+
+| Variable     | Description                         |
+| ------------ | ----------------------------------- |
+| MONGODB\_URI | MongoDB Atlas connection URI        |
+| PORT         | Backend server port (default: 5000) |
+
+---
+
+## 🧠 Future Improvements
+
+- Add user authentication
+- Paginate records
+- Deploy to Vercel (frontend) and Render/Heroku (backend)
+
+---
+
+## 🙋 About Me
+
+**Sanampudi Venkatappa Reddy**\
+📫 Reach me at: [vs23i@fsu.edu](mailto\:vs23i@fsu.edu)\
+🔗 GitHub: [SVAR-Venkat](https://github.com/SVAR-Venkat)\
+🔗 LinkedIn: [sanampudi-venkatappa](https://www.linkedin.com/in/sanampudi-venkatappa/)
+
+---
+
+Happy forecasting! ☀️🌦❄️
+
