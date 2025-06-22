@@ -55,18 +55,7 @@ cd server
 npm install
 ```
 
-### 🌐 Set up environment variables
 
-Create a `.env` file in the `server` folder:
-
-```env
-PORT=5000
-MONGO_URI=your_mongodb_connection_string
-```
-
-Replace `your_mongodb_connection_string` with your actual MongoDB URI.
-
----
 
 ## ✅ Running the App
 
@@ -90,7 +79,34 @@ Or use tools like `concurrently` to run both from one command.
 
 ## 📁 Folder Structure
 
-
+weather-app-pmaccelerator/
+├── build/                     # Production build (after running npm build)
+├── node_modules/             # Dependencies
+├── public/                   # Static files
+├── server/                   # Backend files (server.js)
+│   └── server.js             # Express backend
+├── src/                      # Frontend source code
+│   ├── components/           # UI Components
+│   │   ├── FooterAboutMe.js
+│   │   ├── ForecastCard.js
+│   │   ├── LocationButton.js
+│   │   ├── WeatherDisplay.js
+│   │   ├── WeatherForm.js
+│   │   └── WeatherRecords.js
+│   │   └── YouTubeVideos.js
+│   ├── utils/                # Export utilities
+│   │   └── exportUtils.js
+│   ├── App.js
+│   ├── App.css
+│   ├── index.js
+│   ├── index.css
+│   ├── logo.svg
+│   └── reportWebVitals.js
+├── .env                      # MongoDB URI and config
+├── .gitignore
+├── package.json
+├── package-lock.json
+└── README.md
 
 ---
 
