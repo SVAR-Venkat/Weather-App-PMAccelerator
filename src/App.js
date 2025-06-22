@@ -5,6 +5,10 @@ import LocationButton from "./components/LocationButton";
 import FooterAboutMe from "./components/FooterAboutMe";
 import WeatherRecords from "./components/WeatherRecords";
 
+import YouTubeVideos from "./components/YouTubeVideos";
+
+
+
 import {
   exportToJSON,
   exportToCSV
@@ -124,16 +128,22 @@ function App() {
     <button onClick={() => exportToJSON(forecast.slice(1))}>Download JSON</button>
     <button onClick={() => exportToCSV(forecast.slice(1))}>Download CSV</button>
   </div>
-)}
+   )}  
+
+
+
 
       
 
-             <div className="App" style={{ padding: "2rem", fontFamily: "Arial, sans-serif" }}>
+    <div className="App" style={{ padding: "2rem", fontFamily: "Arial, sans-serif" }}>
       <h1 style={{ textAlign: "center", marginBottom: "2rem" }}>
         Weather Record Management
       </h1>
       <WeatherRecords />
     </div>
+
+    {savedLocation && <YouTubeVideos location={savedLocation} />}
+
 
     
 
